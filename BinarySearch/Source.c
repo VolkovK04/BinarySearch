@@ -45,6 +45,8 @@ int readInt(FILE* file) {
 }
 
 int main() {
+    //new commit
+    //test
     int flag = 1;
     for (int k = 1; k <= 2; k++) {
         char nameIn[64];
@@ -60,6 +62,7 @@ int main() {
         fclose(input);
         int result = search(nums, numsSize, target);
         free(nums);
+        ERRORERRORERRORERRORERRORERRORERRORERRORERROR
         char nameOut[64];
         sprintf(nameOut, "tests/output%d", k);
         FILE* output = fopen(nameOut, "r");
