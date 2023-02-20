@@ -49,8 +49,8 @@ int main() {
     //test
     int flag = 1;
     for (int k = 1; k <= 2; k++) {
-        char nameIn[64];
-        sprintf(nameIn, "tests/input%d", k);
+        char nameIn[100];
+        sprintf(nameIn, "C:\\Users\\volkov\\source\\repos\\BinarySearch\\BinarySearch\\tests\\input%d", k);
         FILE* input = fopen(nameIn, "r");
         fileCheck(input);
         int numsSize = readInt(input);
@@ -62,9 +62,9 @@ int main() {
         fclose(input);
         int result = search(nums, numsSize, target);
         free(nums);
-        ERRORERRORERRORERRORERRORERRORERRORERRORERROR
-        char nameOut[64];
-        sprintf(nameOut, "tests/output%d", k);
+        //ERRORERRORERRORERRORERRORERRORERRORERRORERROR
+        char nameOut[100];
+        sprintf(nameOut, "C:\\Users\\volkov\\source\\repos\\BinarySearch\\BinarySearch\\tests\\output%d", k);
         FILE* output = fopen(nameOut, "r");
         fileCheck(output);
         int expected = readInt(output);
